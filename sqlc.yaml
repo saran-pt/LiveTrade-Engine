@@ -1,0 +1,9 @@
+version: "2"
+sql:
+  - schema: "pkg/sql/schema"
+    queries: "pkg/sql/queries"
+    engine: "postgresql"
+    gen:
+      go:
+        out: "pkg/sql/dbal"
+        
